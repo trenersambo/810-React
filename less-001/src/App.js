@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import logo from './judo.jpg';
 import './App.css';
+
+console.log('сработал App.js')
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <img src={logo}  alt="бросокПрогиб" 
+      className='judo_img'
+      />
+
+      <p  className='p_txt' >
+      Прогибайся на бросок, а не под условия
+      </p>
+      <hr />
+      <p>первый react-проект</p>
+
     </div>
+
   );
 }
 

@@ -1,5 +1,26 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: rgb(105, 105, 105);
+}
+
 .App {
   text-align: center;
+  background: rgb(81, 81, 81);
+}
+
+.judo_img{
+width: 250px;
+border-radius: 10px;
+margin: 35px 0;
+}
+
+.p_txt{
+font-size: 35px;
+text-shadow: 1px 1px 1px #2f2f2f;
+margin-bottom: 35px;
+background: rgb(81, 81, 81);
 }
 
 .App-logo {
@@ -14,7 +35,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #7b7b7b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
