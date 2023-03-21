@@ -1,4 +1,4 @@
-
+import ComponTxt2 from './ComponTxt2'
 console.log('Компонент ComponTxt.js ')
 
 function text() {
@@ -10,6 +10,8 @@ function text() {
       <div className="second">
       это второй проект на React
       </div>
+
+      <ComponTxt2/>
     </>
    );
 }
