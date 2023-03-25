@@ -1,0 +1,45 @@
+
+
+.cB1{
+width: 120px;
+height: 45px;
+border: 2px solid #20ed05;
+border-radius: 50px 80%;
+
+}
+
+.cB2{
+margin: 25px;
+width: 150px;
+height: 45px;
+border: 3px solid #eb0404;
+border-radius: 6px;
+}
+
+.cB3{
+
+width: 180px;
+height: 45px;
+border: 1px solid #464545;
+border-radius: 6px;
+}
+
+.inpt{
+margin: 25px;
+height: 35px;
+border: 1px solid #464545;
+padding-left: 10px;
+font-size: 20px;
+
+}
+
+section{
+border: 1px solid #000;
+padding: 10px;
+border-radius: 6px;
+margin: 15px;
+}
+
+
+
+
