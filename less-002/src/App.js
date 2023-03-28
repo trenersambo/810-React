@@ -2,6 +2,7 @@ import './App.css';
 import  ComponFoto from './ComponFoto'
 import Text from './ComponTxt'
 import Text3 from './ComponTxt3'
+import {LearnProps1} from './Learn-Props1'
 
 import SportList from './SportList';
  
@@ -23,6 +24,13 @@ const sportArr = [
 {"name": "Muay", "descript": "Fight for man", "img": "4.jpg"},
 ]
 
+// Для примера деструктуризации props внутри компонента
+let arr = [
+{name:"sambo",top: 100},
+{name:"judo",top: 300},
+{name:"BJJ",top: 200},
+]
+
 function App() {
   return (
     <div className="App">
@@ -39,6 +47,9 @@ function App() {
     imgEl = {el.img}
     />)  
     }
+
+
+    <LearnProps1 title = {arr}/>
     </div>
   );
 }

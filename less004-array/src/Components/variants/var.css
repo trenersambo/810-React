@@ -1,0 +1,12 @@
+.top{
+display:flex;
+justify-content: center;
+gap: 30px;
+background: #000;
+width: 100vw;
+
+font-size: 25px;
+padding: 22px;
+
+}
+ 
