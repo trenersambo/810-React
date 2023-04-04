@@ -1,3 +1,4 @@
+//вариант не популярный (при тысячах массивах !?)
 
 function prodList1({sportArr}) {
   return ( 
@@ -14,4 +15,4 @@ function prodList1({sportArr}) {
 
 export default prodList1;
 
-// чтрв 2 {sportArr} - вместо props сделана ДЕСТРУКТУРИЗАЦИЯ
+// строка 2:  {sportArr} - деструкутризация

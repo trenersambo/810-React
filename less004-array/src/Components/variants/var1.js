@@ -3,8 +3,8 @@ import ProdList from "../Product/ProdList1";
 function Var1() {
 
   const arr =  [
-  {id:'a1', name: "Sambo"},
-  {id:'a2', name: "BJJ"},  
+  {id:'id-1', name: "Sambo"},
+  {id:'id-2', name: "BJJ"},  
   ]
 
 
