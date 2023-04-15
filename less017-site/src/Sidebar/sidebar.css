@@ -1,0 +1,8 @@
+/* правый блок: САЙДБАР */
+
+.sidebar_right{
+border: 1px solid #818181;
+background-color: #fff293;
+}
+
+.sidebar_right{grid-area: s;}

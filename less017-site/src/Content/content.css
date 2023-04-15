@@ -1,0 +1,8 @@
+/* Левый: КОНТЕНТ */
+
+.content_left{
+border: 1px solid #818181;
+background-color: #a0a0a0;
+}
+
+.content_left{grid-area: c;}

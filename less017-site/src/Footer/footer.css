@@ -1,0 +1,8 @@
+/* подвал сайта */
+
+.footer{
+border: 1px solid #818181;
+background-color: #b8ff9c;
+}
+
+.footer{grid-area: f;}

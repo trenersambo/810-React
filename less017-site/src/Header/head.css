@@ -1,0 +1,12 @@
+/* шапка */
+
+.head_top{
+border: 1px solid #818181;
+background-image: url(./img/sambo__top.jpg);
+background-repeat:round ;
+height: 250px;
+opacity: .78;
+}
+
+
+.head_top{grid-area: h;}

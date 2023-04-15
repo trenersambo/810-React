@@ -1,0 +1,12 @@
+/* обертка сайта */
+
+.wrapper{
+max-width: 900px;
+margin: 0 auto;
+display: grid;
+grid-template-areas: 
+"h h h"
+"c c s"
+"f f f ";
+}
+
