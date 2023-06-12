@@ -11,14 +11,22 @@ function App() {
 
   // ф-ция добавления Объекта новой задачи
   let newTodo = (newText)=>{
-    setTodo([...todo, newText])
+    let todoObj = {
+    text: newText, // текст из todo
+    isCompiled: false, // выполнен / не выполнен
+    id: uuidv4(), // присвоить динамич. id
+    }
+
+    console.log(todoObj) // тест
+
+    setTodo([...todo, todoObj]) // добав. в [todo] нов.текст
   }
 
   // ф-ция удаления задачи из массива todo
- let delTodo = (index)=>{
-  setTodo(todo.filter((_, idx)=>idx !=index))
+ let delTodo = (id)=>{
+  setTodo(todo.filter((todoObj)=>todoObj.id !=id))
  }
-
+  // Помним, что todo - это уже массив объектов (text, ..,id)
   return (
     <div className="App">
       <h2>Todo App</h2>

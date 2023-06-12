@@ -2,9 +2,9 @@ import {RiTodoFill} from 'react-icons/ri'
 
 import style from './Todos.module.css'
 
-function  Todo({ todoElProp, idxProp, delTodoPropProp}) {
+function  Todo({ todoObjElProp, delTodoPropProp}) {
  let deleteTodo=()=>{
-  delTodoPropProp(idxProp)
+  delTodoPropProp(todoObjElProp.id)
  }
  
   return ( 
@@ -13,7 +13,7 @@ function  Todo({ todoElProp, idxProp, delTodoPropProp}) {
      onDoubleClick={deleteTodo}
     >
       <RiTodoFill className={style.icon}/>
-      <h3>  {todoElProp}</h3> 
+      <h3>  {todoObjElProp.text}</h3> 
     </div>
 
  
