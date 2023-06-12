@@ -7,6 +7,7 @@ import InputText from './Compon/InputTxt' ;
 import {Checkbox} from './Compon/Checkbox' ;
 import {RadioBtn} from './Compon/RadioButton' ;
 import {SelectEl} from './Compon/Select' ;
+import ToggleBtn from './Compon/ToggleBtn' ;
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
          <Checkbox/>
          <RadioBtn/>
          <SelectEl/>
+         <ToggleBtn/>
       </header>
     </div>
   );
