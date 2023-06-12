@@ -7,7 +7,7 @@ import TodoList from "./Compon/TodoList";
 import "./App.css";
 
 function App() {
-  const [todo, setTodo] = useState(['todo1', 'todo2'])
+  const [todo, setTodo] = useState([])
 
   // ф-ция добавления Объекта новой задачи
   let newTodo = (newText)=>{
@@ -15,7 +15,9 @@ function App() {
   }
 
   // ф-ция удаления задачи из массива todo
- 
+ let delTodo = (index)=>{
+  setTodo(todo.filter((_, idx)=>idx !=index))
+ }
 
   return (
     <div className="App">
@@ -23,7 +25,7 @@ function App() {
 
       <Forma  NewTodoProp = {newTodo} />
 
-      <TodoList todoProp = {todo} />
+      <TodoList todoProp = {todo} delTodoProp={delTodo}/>
     </div>
   );
 }
