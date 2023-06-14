@@ -3,7 +3,7 @@ import Todo from './Todo'
 import style from './Todos.module.css'
 
 // todoProp - это массив Объектов {text, is.., id}
-function TodoList({todoProp, delTodoProp} ) {
+function TodoList({todoProp, delTodoProp, toggleCompiledProp} ) {
 
   return ( 
   <div  className={style.wrapper}>
@@ -13,6 +13,8 @@ function TodoList({todoProp, delTodoProp} ) {
         todoObjElProp = {todoObjEl}
 
         delTodoPropProp = {delTodoProp}
+
+        toggleCompiledProp = {toggleCompiledProp }
       />
        )}
       

@@ -13,7 +13,7 @@ function App() {
   let newTodo = (newText)=>{
     let todoObj = {
     text: newText, // текст из todo
-    isCompiled: false, // выполнен / не выполнен
+    isCompl: false, // toggle: true->false
     id: uuidv4(), // присвоить динамич. id
     }
 
@@ -26,6 +26,15 @@ function App() {
  let delTodo = (id)=>{
   setTodo(todo.filter((todoObj)=>todoObj.id !=id))
  }
+
+  let toggleCompl=(id)=>{
+    setTodo(todo.map((elObj)=> 
+        elObj.id === id // если нашли такое, то ...
+      ? {... elObj, isCompl: !elObj.isCompl} //... меняем Boolean
+      : {... elObj}
+      )
+    )}
+
   // Помним, что todo - это уже массив объектов (text, ..,id)
   return (
     <div className="App">
@@ -33,7 +42,11 @@ function App() {
 
       <Forma  NewTodoProp = {newTodo} />
 
-      <TodoList todoProp = {todo} delTodoProp={delTodo}/>
+      <TodoList 
+      todoProp = {todo} 
+      delTodoProp={delTodo} 
+      toggleCompiledProp = {toggleCompl}
+      />
     </div>
   );
 }
