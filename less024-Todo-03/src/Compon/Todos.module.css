@@ -50,3 +50,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-style: normal;
 font-size: 22px;
 }
+
+/* === исполненная задача === */
+.isComplit{}
+
+.taskEl.isComplit{
+color: #7a7a7a7a;
+text-decoration-line: line-through;
+background-color: #1e325a;
+
+transform: scale(0.95);
+transition: 1s; 
+}

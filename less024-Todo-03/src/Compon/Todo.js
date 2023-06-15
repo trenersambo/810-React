@@ -12,7 +12,7 @@ function  Todo({ todoObjElProp, delTodoPropProp, toggleCompiledProp}) {
 
   return ( 
   <> 
-    <div className= {style.taskEl}  
+    <div className= {`${style.taskEl} ${todoObjElProp.isCompl ? style.isComplit : ''}`}  
      onDoubleClick={deleteTodo} >
 
       <RiTodoFill className={style.todoIcon}/>
