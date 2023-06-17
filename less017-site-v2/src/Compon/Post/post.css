@@ -1,0 +1,26 @@
+.user-wrap{
+
+border: 1px solid #000;
+width: 200px;
+padding: 20px;
+margin-right: 15px;
+margin-bottom: 15px;
+
+border-radius: 8px;
+
+background: rgb(30,32,170);
+background: linear-gradient(9deg, rgba(30,32,170,1) 1%, rgba(62,156,213,1) 17%, rgba(68,141,217,1) 30%, rgba(76,120,222,1) 48%, rgba(94,72,235,1) 90%);
+}
+
+.user-wrap h3,
+.user-wrap h4{
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-size: 22px;
+}
+
+.users-list{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-around;
+}
