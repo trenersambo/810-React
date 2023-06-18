@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 import Forma from "./Compon/Forma";
 import TodoList from "./Compon/TodoList";
 
+import ActionsButtons from './Compon/ActionButtons'
+
 import "./App.css";
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
       <h2>Todo App</h2>
 
       <Forma  NewTodoProp = {newTodo} />
+
+      <ActionsButtons/>
 
       <TodoList 
       todoProp = {todo} 

@@ -1,0 +1,25 @@
+
+
+.btn{
+
+margin-bottom: 25px;
+/* width: 150px; */
+width: fit-content;
+padding: 0px 15px;
+height: 45px;
+border-radius: 6px;
+background-color: #7db3f9;
+font-size: 22px;
+/* line-height: 22px; */
+color: darkslategrey;
+box-shadow: 0 0 15px 1px #434343;
+cursor: pointer;
+}
+
+.btn:hover{
+box-shadow: 0 0 10px 1px #b8b8b8;
+}
+
+.btn:nth-child(1){
+margin-right: 15px;
+}
