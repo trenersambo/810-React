@@ -7,6 +7,7 @@ const Main=()=>{
   <main className="main">
 
       <p className='main-top-txt' >Main contents</p>
+      
         <div className="main-posts-flex">
            <Posts/>
         </div>

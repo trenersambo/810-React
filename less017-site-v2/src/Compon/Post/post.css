@@ -10,6 +10,8 @@ border-radius: 8px;
 
 background: rgb(30,32,170);
 background: linear-gradient(9deg, rgba(30,32,170,1) 1%, rgba(62,156,213,1) 17%, rgba(68,141,217,1) 30%, rgba(76,120,222,1) 48%, rgba(94,72,235,1) 90%);
+
+
 }
 
 .user-wrap h3,
@@ -25,4 +27,19 @@ flex-wrap: wrap;
 justify-content:space-around;
 
 align-self: stretch;
+position: relative;
+}
+
+.heart-svg{
+position: absolute;
+width: 30px;
+height: 30px;
+ 
+top: 30px;
+right: 30px;
+
+}
+
+.heart-svg.like-red {
+fill: rgb(233, 21, 21);
 }
