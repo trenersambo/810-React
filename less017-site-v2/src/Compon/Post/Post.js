@@ -9,7 +9,7 @@ let [like, setLike]  = useState(false)
  let changeLike=(ev)=>{
   setLike(!like)
 
-  // like ? ev.target.style.fill='red' : ev.target.style.fill=''
+  //криво работает like ? ev.target.style.fill='red' : ev.target.style.fill=''
  
  }
  //console.log(like)
