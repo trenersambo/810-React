@@ -18,6 +18,9 @@ background: linear-gradient(176deg, rgba(24,69,135,1) 1%, rgba(77,42,148,1) 47%,
 
 .header h3{
 margin: 20px auto;
+color: rgb(183, 183, 183);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 22px;
 }
 
 .navLinks{

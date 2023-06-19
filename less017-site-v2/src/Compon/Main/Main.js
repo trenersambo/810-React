@@ -1,5 +1,5 @@
 import './main.css'
-import Post from '../Post/Post'
+import Posts from '../Post/Posts'
 const Main=()=>{
 
   return(
@@ -8,7 +8,7 @@ const Main=()=>{
 
       <p className='main-top-txt' >Main contents</p>
 
-      <Post/>
+      <Posts/>
   
   </main>
  
