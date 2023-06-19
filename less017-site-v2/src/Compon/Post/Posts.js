@@ -22,26 +22,16 @@ useEffect(()=>{
 
 },[])
 
-console.log(arr)
-
-let userPost = arr.map((el,idx)=>{
-  return <div className='user-wrap' key={idx}>
-    <h3>{el.first_name}</h3>
-    <h4>{el.last_name}</h4>
-    <img src={el.avatar} alt="avatar" />
-  </div>
-})
-
+//такой код передает каждый элемент отдельно
   return(
- 
   <>
-    <Post userPostProp={userPost}/> 
- 
+    {arr.map((el, idx)=>{
+        return <Post el = {el} key={idx}/> 
+      })
+    }
+
   </>
 
- 
- 
- 
   )
 }
 
