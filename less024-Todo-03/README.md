@@ -1,6 +1,3 @@
-# Пример проекта ToDo
-![стадия работы над проектом](https://github.com/trenersambo/810-React/blob/c4b6c7905a99dafff029477705c39fd32f2a8eda/less024-Todo-03/todoApp.png)
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

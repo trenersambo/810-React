@@ -6,17 +6,19 @@ import{RiDeleteBin2Line, RiRefreshLine} from 'react-icons/ri'
 
 import style from './actBtns.module.css'
 
-function ActionsButtons() {
+function ActionsButtons({deleteAllTodo, deleteComplite}) {
   return ( 
 
   <div  >
 
-    <Button title={'Удалить все задачи'}>
+    <Button title={'Удалить все задачи'}
+    onClick={deleteAllTodo}>
       Reset all tasks
       < RiRefreshLine className={style.icon}/> 
      </Button>
 
-    <Button title={'Удалить исполненные задачи'}>
+    <Button title={'Удалить исполненные задачи'}
+    onClick={deleteComplite}>
       Delete complite
       < RiDeleteBin2Line  className={style.icon}/> 
     </Button>  

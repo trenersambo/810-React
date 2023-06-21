@@ -28,7 +28,7 @@ function App() {
  let delTodo = (id)=>{
   setTodo(todo.filter((todoObj)=>todoObj.id !=id))
  }
-
+  // ф-ия toggle-смены true на false и обратно
   let toggleCompl=(id)=>{
     setTodo(todo.map((elObj)=> 
         elObj.id === id // если нашли такое, то ...
@@ -37,6 +37,16 @@ function App() {
       )
     )}
 
+    // ф-ция удаления всех задач (состояние: пустой [] )
+    let deleteAllTodo=()=>{
+      setTodo([])
+    }
+
+    //ф-иця удалить только исполненные задачи (isCompl д.быть true)
+    let deleteComplite=()=>{
+      setTodo(todo.filter((el)=>!el.isCompl))
+    }
+
   // Помним, что todo - это уже массив объектов (text, ..,id)
   return (
     <div className="App">
@@ -44,7 +54,9 @@ function App() {
 
       <Forma  NewTodoProp = {newTodo} />
 
-      <ActionsButtons/>
+      {!!todo.length && <ActionsButtons 
+      deleteAllTodo={deleteAllTodo}
+      deleteComplite={deleteComplite}/>}
 
       <TodoList 
       todoProp = {todo} 
