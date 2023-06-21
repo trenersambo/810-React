@@ -1,6 +1,6 @@
 import Header from "./Compon/Header/Header";
 import Main from "./Compon/Main/Main";
-import Aside from "./Compon/Aside/aside";
+import AsideAPI from "./Compon/Aside/AsideAPI";
 import Footer from "./Compon/Footer/footer";
 
 import "./App.css";
@@ -13,7 +13,7 @@ function App() {
 
         <div className="aw-content">
           <Main />
-          <Aside />
+          <AsideAPI />
         </div>
 
         <Footer/>

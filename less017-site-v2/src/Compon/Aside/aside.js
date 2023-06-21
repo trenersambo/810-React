@@ -1,17 +1,31 @@
+import { useState } from 'react';
 import './aside.css'
-let Aside=()=>{
 
-  return(
-  <div className="aside-wrapper">
-      <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Officiis, rerum? Nesciunt corrupti commodi, autem recusandae 
-      ex repudiandae hic nihil amet animi ipsum velit sed! 
-      Iusto corporis vitae suscipit dolor facilis!
-    </p>
-  
-  </div>
+function Aside({el}) {
+let [more, setMore] = useState(false)
 
-  )
+let moreNoMore=()=>{
+  setMore(!more)
 }
-export default Aside
+
+  return ( 
+  <div className="aside-post">
+  
+    <h4> {el.title}</h4>
+
+    <div>{more? el.body : el.body.slice(0,42)} 
+
+      <button className='btn'
+      onClick={ moreNoMore}
+      >
+        {more? 'Свернуть' : '...Далее'} 
+      </button>
+
+    </div>
+
+  </div>
+ 
+   );
+}
+
+export default Aside;
