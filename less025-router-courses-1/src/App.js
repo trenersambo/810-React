@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<MainLayout/>}>
             <Route index element={ <Home/>}/>
             <Route path='trening' element={ <Trening/>}/>
-            <Route path='trening/:sport' element={ <TreningSingle/>}/>
+            <Route path='trening/:sportParam' element={ <TreningSingle/>}/>
 
             <Route path='*' element={ <Notfound/> }/>  
           </Route>
