@@ -1,0 +1,20 @@
+/* стиль конкретного класса .btn для кнопки */
+.btn{
+margin: 20px 0 50px 0;
+width: 400px;
+height: 70px;
+background-color: #6aff20;
+border-radius: 8px;
+box-shadow: 0 0 12px 3px #a2a2a2;
+font-size: 22px;
+}
+
+/* Глобальный стиль для всех кнопок button */
+/* действует на <button> в Test.js */
+
+button{
+margin-top: 15px;
+width: 200px;
+height: 60px;
+
+}

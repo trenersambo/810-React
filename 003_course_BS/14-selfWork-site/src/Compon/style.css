@@ -1,0 +1,48 @@
+.wrapper{
+    border: 1px solid #bbbbbb;
+
+}
+
+.head{grid-area: hd} 
+.side{grid-area: sb} 
+.content{grid-area: ct} 
+.footer{grid-area: ft} 
+
+.side{
+    background-color: #3e444d;
+    display: flex;
+    /* max-width: 40vw; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 10px ;
+}
+
+
+
+.userCard{
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* перенос слов */
+.userCard  p{
+  word-wrap: break-word;
+overflow-wrap: break-word;
+min-width: 10ch;
+/* padding: 10px; */
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}

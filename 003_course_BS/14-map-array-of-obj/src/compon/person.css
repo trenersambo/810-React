@@ -1,0 +1,9 @@
+.cardPerson{
+display: flex;
+flex-direction: column;
+text-align: center;
+border: 1px solid #dbdbdb;
+margin-bottom: 15px;
+padding: 12px;
+border-radius: 6px;
+}

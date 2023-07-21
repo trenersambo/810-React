@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подключение React через  Сеть</title>
+</head>
+<body>
+
+<div id="app"> </div>
+<div class="vanilJS"></div>
+
+
+<!-- №1. Подключение библиотеки react -->
+<script 
+  src="https://unpkg.com/react@18/umd/react.development.js" 
+  crossorigin>
+</script>
+
+<!-- №2. Подключение библиотеки react-DOM -->
+<!-- Цель: чтоб отрисовать через DOM значение из const txt -->
+<script 
+  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  crossorigin>
+</script>
+
+<!-- переменная txt во вновьсозданном элементе h1 -->
+<script>
+
+  const txt = React.createElement('h1', null, 'Hello_From_React ' ) ;
+  //console.log(txt.props.children)
+
+  // нашли div с id='app', куда поместим слово 'Hello_From_React ' 
+  const divApp = document.getElementById('app')
+
+  // передали в метод createRoot(), т.е. встраиваем корень  в html
+  const root = ReactDOM.createRoot(divApp) 
+
+  // отрисовка
+  root.render(txt)
+
+ </script>
+
+ <!-- добавить в html код через vanilla JS -->
+
+  <script>
+  
+  let elh  = document.createElement('h1')
+  elh.innerText= 'СамбоРУЛИТ';
+   document.querySelector('.vanilJS').appendChild(elh) ;
+  
+  
+  </script>
+
+  
+</body>
+</html>

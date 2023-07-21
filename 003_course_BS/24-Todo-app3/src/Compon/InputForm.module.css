@@ -1,0 +1,29 @@
+.inputEl{
+width: 350px;
+height: 45px;
+border-radius: 6px;
+padding-left: 15px;
+margin: 0 25px 25px 0;
+font-size: 22px;
+color: darkslategrey;
+
+}
+
+.btnEl{
+/* display: inline-block; */
+margin-bottom: 25px;
+/* width: 150px; */
+width: fit-content;
+padding: 8px 15px;
+height: 45px;
+border-radius: 6px;
+background-color: #49b64d;
+font-size: 22px;
+color: darkslategrey;
+box-shadow: 0 0 15px 1px #93ee96;
+cursor: pointer;
+}
+
+.btnEl:hover{
+box-shadow: 0 0 15px 1px #f5f5b1;
+}

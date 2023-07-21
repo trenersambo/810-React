@@ -1,0 +1,23 @@
+/* стили для кнопок и проч */
+
+button{
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+button:hover{
+  /* outline-offset: -6px; */
+  text-shadow: 0px 2px 30px #f43d0f;
+}
+
+.greenDiv{
+    background-color: #76f571;
+    font-size: 20px;
+    margin: 15px;
+    width: 269px;
+    padding: 8px;
+    color: chocolate;
+}

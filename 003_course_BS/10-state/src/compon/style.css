@@ -1,0 +1,11 @@
+button{
+  margin-top: 15px;
+  width: 200px;
+  height: 65px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+button :nth-child(1){
+  background: #59f44b;
+}
