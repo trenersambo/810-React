@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+
+    background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 24px;
+  color: white;
+}
+
+.wrapper{
+display: flex;
+    height: 40px;
+    gap: 20px;
+    margin-bottom: 25px;
+    align-items: baseline;
+}
