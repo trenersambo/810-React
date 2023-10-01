@@ -119,6 +119,11 @@ input {
   gap: 1.2rem;
 }
 
+.text-checked{
+text-decoration: line-through;
+color: gray;
+}
+
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;

@@ -26,6 +26,11 @@ function App() {
     setBag([...bag, newItem]) // Нов. объект к массиву bag (chatGPT+)
   }
 
+  // удаление из списка 
+  let deleteItem=(id)=>{
+    setBag(bag.filter((elm)=>elm.id !=id))
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -36,8 +41,8 @@ function App() {
         txt={txt}
         arrBag={arrBag}
       />
-      <PackList />
-      <Stats />
+      <PackList bag={bag} deleteItem={deleteItem} />
+      <Stats bag={bag}/>
     </div>
   )
 }

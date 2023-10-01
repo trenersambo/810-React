@@ -1,9 +1,34 @@
-function Item() {
+import { useState } from "react";
+
+function Item({el, deleteItem}) {
+
+  let [checkit, setCheckit] = useState(false)
+
+  // Для чего: true-false в чек-боксе
+  // передать в PackList инф. об упаковке: true-false
+  function changeCheck(){
+    setCheckit(!checkit)
+    el.packed = !checkit
+  }
+
   return ( 
  
      <>
-           <li>самбовка <button>X</button></li>
-           <li>борцовки <button>X</button></li>
+        <li>
+          <input type="checkbox" 
+          checked={checkit} 
+          onChange={ changeCheck}
+          />
+
+            <span className={checkit? 'text-checked' : ''} >
+              {el.number} {el.txt}
+            </span>  
+
+          <button onClick={()=>deleteItem(el.id)}>
+            X
+          </button>
+
+        </li>
      </>
 
  

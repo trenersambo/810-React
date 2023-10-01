@@ -21,7 +21,7 @@ function Form({changeNum, number, changeTxt, txt, arrBag}) {
 
   return ( 
   <div className="add-form">
-    <h3>Что положишь в сумку?  </h3>
+    <h3>Что надо взять на тренировку?  </h3>
 
     <form action="" method="get" onSubmit={ formSubmit }>
 
