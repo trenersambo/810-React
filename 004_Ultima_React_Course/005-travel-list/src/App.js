@@ -31,6 +31,11 @@ function App() {
     setBag(bag.filter((elm)=>elm.id !=id))
   }
 
+  // Очистить весь список
+  let deleteList=()=>{
+    setBag([])
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -41,7 +46,7 @@ function App() {
         txt={txt}
         arrBag={arrBag}
       />
-      <PackList bag={bag} deleteItem={deleteItem} />
+      <PackList bag={bag} deleteItem={deleteItem} deleteList={deleteList} />
       <Stats bag={bag}/>
     </div>
   )

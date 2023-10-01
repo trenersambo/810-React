@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Item from "./pl-item";
 
-function PackList({bag, deleteItem}) {
+function PackList({bag, deleteItem, deleteList}) {
    console.log(bag)
 
   let[sortBy, setSortBy] = useState('input')
@@ -26,8 +26,6 @@ function PackList({bag, deleteItem}) {
   }
 
 
-
-
   return ( 
   <div className="list">
     <ul>
@@ -42,6 +40,8 @@ function PackList({bag, deleteItem}) {
         <option value="txt">Сортировка по алфавиту</option>
         <option value="pack">Сортировка: упакован/неупакован</option>
       </select>
+
+    <button onClick={deleteList}>Все нафиг!</button>
     </div>
 
   </div>

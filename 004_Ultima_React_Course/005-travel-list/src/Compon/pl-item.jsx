@@ -4,11 +4,9 @@ function Item({el, deleteItem}) {
 
   let [checkit, setCheckit] = useState(false)
 
-  // Для чего: true-false в чек-боксе
-  // передать в PackList инф. об упаковке: true-false
   function changeCheck(){
-    setCheckit(!checkit)
-    el.packed = !checkit
+    setCheckit(!checkit)  // смена true-false в чек-боксе
+    el.packed = !checkit  // передать в PackList инф. об упаковке: true-false
   }
 
   return ( 
